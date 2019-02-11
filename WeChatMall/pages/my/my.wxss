@@ -1,0 +1,40 @@
+/* pages/my/my.wxss */
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+}
+image{
+  margin-top: 35rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius:35px;
+}
+.username{
+  margin-top: 35rpx;
+  margin-bottom: 35rpx;
+  font-size: 13px;
+  color: white;
+}
+.address, .order{
+  margin-top: 18rpx;
+  margin-bottom: 18rpx;
+  padding-bottom: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address text, .order text{
+  font-size: 13px;
+  color:  gray;
+}
+.order{
+  padding-bottom: 10px;
+}
+.showAddress{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

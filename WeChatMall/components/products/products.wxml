@@ -1,0 +1,14 @@
+<!--components/products/products.wxml-->
+<view class='container'>
+  <block wx:for="{{products}}">
+    <view class='product-item' bindtap='onProductItemTap' data-id='{{item.id}}'>
+      <view class='product-img'>
+        <image src="{{item.main_img_url}}"></image>
+      </view>
+      <view class='product-text'>
+        <text class='product-name'>{{item.name}}</text>
+        <text class='product-price'>￥{{item.price}}</text>
+      </view>
+    </view>
+  </block>
+</view>

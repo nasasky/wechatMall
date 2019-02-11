@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JianMall CMS</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	    <div class="container-fluid">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#">JianMall CMS</a>
+	      </div>
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">商品 <span class="sr-only">(current)</span></a></li>
+	          <li><a href="/category.html">分类</a></li>
+	          <li><a href="/theme.html">主题</a></li>
+	          <li><a href="#">订单</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	          <li class="dropdown">
+
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="username"></span> <span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#" onclick="window.base.logout()">退出登陆</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+  	</nav>
+
+	<table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>商品名</th>
+          <th>价格</th>
+          <th>库存</th>
+          <th>图片</th>
+          <th>分类</th>
+          <th>创建时间</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="product-table">
+
+
+      </tbody>
+    </table>
+
+    <div class="bottom-menu">
+    	<span class="glyphicon glyphicon-menu-down menu-down" aria-hidden="true" id="more"></span>
+    	<div class="tip" style="display: none;">没有更多商品了~~</div>
+    </div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/layer/layer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/message.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript">
+		function openImg(id){
+			layer.photos({
+			  photos: '#photo-'+id
+			  ,anim: 5
+			}); 
+		}
+	</script>
+</body>
+</html>

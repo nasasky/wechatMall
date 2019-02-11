@@ -1,0 +1,11 @@
+/*.theme-main-img{*/
+	/*width: 150.5px;*/
+	/*height: 150.5px;*/
+/*}*/
+.theme-head-img, .theme-main-img{
+	width: 320px;
+	height: 150px;
+}
+th, td{
+	text-align:center;
+}

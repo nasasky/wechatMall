@@ -1,0 +1,31 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <swiper indicator-dots="true" autoplay="true">
+    <block wx:for="{{banner.items}}">
+      <swiper-item>
+        <image bindtap='onThemesItemTap' src="{{item.img.url}}" data-id="{{item.key_word}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="header">
+    <view class='box' bind:tap="onSearching">
+      <image src="/imgs/icon/search.png" />
+      <text>搜索商品</text>
+    </view>
+  </view>
+  <!-- <view class='spilt'></view> -->
+  <!-- <view class="theme">
+    <view class="title">主题</view>
+    <view class='theme-item'>
+      <block wx:for="{{themes}}">
+        <view bindtap='onThemesItemTap' data-id="{{item.id}}"><image class="theme-item" src='{{item.topic_img_i_d.url}}'></image></view>
+      </block>
+    </view>
+  </view> -->
+
+  <view class="title">所有商品</view>
+  <v-products products="{{products}}" />
+
+
+
+</view>

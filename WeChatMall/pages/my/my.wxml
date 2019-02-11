@@ -1,0 +1,27 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image src='/imgs/icon/my.jpg'></image>
+    <text class='username'>s5d5df</text>
+  </view>
+  <view class='spilt'></view>
+  <view class='address'>
+    <block wx:if="{{address}}">
+      <view class='showAddress'>
+        <text>{{address.name}}</text>
+        <text>{{address.mobile}}</text>
+        <text>{{address.totalDetail}}</text>
+      </view>
+    </block>
+    <block wx:else>
+      <view bindtap='addAddress'>
+        <text>添加地址信息</text>
+      </view>
+    </block>
+  </view>
+  <view class='spilt'></view>
+  <view class='order'>
+    <text>我的订单</text>
+  </view>
+</view>
+          

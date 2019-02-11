@@ -1,0 +1,9 @@
+/* pages/theme/theme.wxss */
+image{
+  width: 100%;
+  height: 350rpx;
+  padding-bottom: 10rpx;
+}
+v-products{
+  padding-left: 18rpx;
+}

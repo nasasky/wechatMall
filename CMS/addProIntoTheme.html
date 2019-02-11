@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加商品到主题</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+        .add, .item{
+            padding-top: 50px;
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        label{
+            padding-right: 20px;
+        }
+        .title{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <div class="item">
+            <label class="text-success title">添加商品到主题：</label>
+            <div></div>
+        </div>
+        <div id="checkbox" class="container">
+
+        </div>
+        <div class="col-sm-offset-4 col-sm-5 add">
+            <button type="button" class="btn btn-success btn-block" onclick="add()">添加</button>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/common.js"></script>
+<script src="js/addProIntoTheme.js"></script>
+</body>
+</html>

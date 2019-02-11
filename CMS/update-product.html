@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改商品</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/add-update-product.css">
+	<link rel="stylesheet" href="js/uploadify/uploadify.css">
+	
+</head>
+<body>
+	<div class="container">
+        <form id="myForm" class="form-horizontal">
+            <input type="text" id="product-id" name="id" hidden="true">
+            <input type="text" id="img_id" name="img_id" hidden="true">
+        	<img src="" id="img">
+            <div class="form-group">
+                <label class="col-sm-4 control-label text-success">商品名：</label>
+                <div class="col-sm-5">
+                    <input type="text" id="name" class="form-control" name="name" placeholder="商品名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label text-success">价格：</label>
+                <div class="col-sm-5">
+                    <input type="text" id="price" class="form-control" name="price" placeholder="价格">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label text-success">库存：</label>
+                <div class="col-sm-5">
+                    <input type="text" id="stock" class="form-control" name="stock" placeholder="库存">
+                </div>
+            </div>
+			<div class="form-group">
+                <label class="col-sm-4 control-label text-success">分类：</label>
+                <div class="col-sm-5">
+                    <select id="category">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="file" id="uploadify" name="fileData">
+            </div>
+            
+            <div class="form-group update-btn">
+                <div class="col-sm-offset-4 col-sm-5">
+                    <button type="button" class="btn btn-success btn-block" onclick="update()">更改</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/layer/layer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/update-product.js"></script>
+    <script src="js/uploadify/jquery.uploadify.min.js"></script>
+    <script src="js/upload-img.js"></script>
+    <script type="text/javascript">
+        // function update(){
+        //     const name = $("#name").val()
+        //     const price = $("#price").val()
+        //     const stock = $("#stock").val()
+        //     const category = $("#category").val()
+        //     const img = $("#uploadify").attr("value")
+
+        //     if (!name || !price || !stock) {
+        //         window.message.alert("请填写完整！")
+        //     }
+
+        //     window.base.getData({
+        //         url: "/product/update",
+        //         type: "POST",
+                // data: {
+                //         name,
+                //         price,
+                //         stock,
+                //         category,
+                //         img,
+                // },
+        //         sCallback:function(res){
+        //             console.log(res)
+        //         }
+        //     })
+
+        // }
+        
+    </script>
+</body>
+</html>

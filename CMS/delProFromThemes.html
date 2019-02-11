@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>从主题删除商品</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+		.container{
+			position: absolute;
+            width:500px;
+            height: 50px;
+            top:10%;
+            left:50%;
+            margin-left:-250px;
+            margin-top:-25px;
+            text-align: center;
+		}
+		select{
+			width:420px;
+			height: 34px;
+		}
+
+        .del, .item{
+            padding-top: 50px;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+        <div>
+            <div class="item">
+                <label class="col-sm-4 control-label text-success">商品：</label>
+                <div class="col-sm-5">
+                    <select id="products">
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-offset-4 col-sm-5 del">
+                <button type="button" class="btn btn-success btn-block" onclick="add()">删除</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/layer/layer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/delProFromThemes.js"></script>
+</body>
+</html>

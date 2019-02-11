@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+.spilt{
+  height: 28rpx;
+  background-color:  #F5F6F5;
+}

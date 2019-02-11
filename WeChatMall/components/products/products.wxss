@@ -1,0 +1,33 @@
+/* components/products/products.wxss */
+.container{
+  width: 715rpx;
+  display: flex;
+  flex-direction: column;
+}
+.product-item{
+  height: 215rpx;
+  background-color: #F5F6F5;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+.product-img image{
+  width:100px;
+  height:100px;
+}
+.product-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40rpx;
+  padding-right: 12rpx;
+}
+.product-name{
+  color: black;
+  font-size: 33rpx;
+  padding-bottom: 20rpx;
+}
+.product-price{
+  color:darkcyan;
+  font-size: 30rpx;
+}

@@ -1,0 +1,18 @@
+/*.bottom-menu{
+	padding-top: 45px;
+}*/
+/*.menu-down{
+	display:block;
+	margin: 0 auto;
+}*/
+.tip, th, td, .menu-down{
+	text-align:center;
+}
+.menu-down{
+	display:block;
+	text-align:center;
+}
+.product-img{
+	width: 120px;
+	height: 120px;
+}

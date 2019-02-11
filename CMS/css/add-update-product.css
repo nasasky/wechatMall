@@ -1,0 +1,24 @@
+.container{
+			position: absolute;
+            width:500px;
+            height: 50px;
+            top:10%;
+            left:50%;
+            margin-left:-250px;
+            margin-top:-25px;
+            text-align: center;
+}
+select{
+	width:470px;
+	height: 34px;
+}
+img{
+	display:block;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+#uploadify{
+	position: relative;
+	left: 180px;
+}

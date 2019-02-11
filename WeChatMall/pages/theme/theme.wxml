@@ -1,0 +1,7 @@
+<!--pages/theme/theme.wxml-->
+<view class="container">
+    <view class="theme-header">
+        <image src="{{theme.head_img_i_d.url}}" />
+    </view>
+    <v-products products="{{theme.products}}"/>
+</view>
